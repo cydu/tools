@@ -14,4 +14,5 @@ for line in sys.stdin:
         s += line
 
 u = json.loads(s)
-print( json.dumps(u,ensure_ascii=False,indent = 4))
+print( json.dumps(u,ensure_ascii=False,indent = 2))
+#exec 'print u"%s".encode("utf-8")' % (s)

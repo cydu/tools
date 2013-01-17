@@ -2,7 +2,7 @@
 #example: 
 # echo '{"a":"b"}' | python -mjson.tool
 # support for utf-8 output
-# echo '{"a":"b"}' | json
+# echo '{"location":"\u5317\u4eac"}' | json
 import json
 import sys
 import codecs

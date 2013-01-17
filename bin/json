@@ -1,0 +1,17 @@
+#!/usr/bin/python
+#example: 
+# echo '{"a":"b"}' | python -mjson.tool
+# support for utf-8 output
+# echo '{"a":"b"}' | json
+import json
+import sys
+import codecs
+import locale
+# used for utf-8 output
+sys.stdout = codecs.getwriter(locale.getpreferredencoding())(sys.stdout)
+s = ""
+for line in sys.stdin:
+        s += line
+
+u = json.loads(s)
+print( json.dumps(u,ensure_ascii=False,indent = 4))

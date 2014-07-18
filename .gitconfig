@@ -1,0 +1,42 @@
+[user]
+	name = cydu
+	email = root@cydu.net
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[color "branch"]
+	current = yellow bold
+	remote = cyan bold
+[color "diff"]
+	new = yellow bold
+	old = red bold
+	meta = cyan bold
+	frag = white bold
+	commit = white bold
+[color "status"]
+	added = yellow bold
+	changed = cyan bold
+	untracked = red bold
+[alias]
+    ci = commit
+    co = checkout
+    br = branch
+    st = status
+    rb = rebase
+    rbc = rebase --continue
+    rba = rebase --abort
+    m = merge
+    mt = mergetool
+    lg = log --graph --decorate --date=local
+    cp = cherry-pick
+[diff]
+    tool = vimdiff
+[merge]
+    tool = vimdiff
+[core]
+	autocrlf = false
+[push]
+	default = simple
+[http]
+	sslVerify = false

@@ -44,7 +44,7 @@ set bs=2
 set et
 set hlsearch
 set encoding=utf-8
-" set term=xterm-256color
+set term=xterm-256color
 set foldmethod=syntax
 set foldlevel=100 
 
